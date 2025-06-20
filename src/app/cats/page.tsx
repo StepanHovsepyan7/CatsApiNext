@@ -6,7 +6,7 @@ const headers = new Headers({
   "x-api-key": "live_qn77yA2SHtNrNefEeec2PJtHL2NRL4Pz64j2pbouFcnhZUvVIzR3CytFBfnigH8V"
 });
 
-const request = {
+const request:any = {
   method: 'GET',
   headers: headers,
   redirect: 'follow'
