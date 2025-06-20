@@ -20,7 +20,44 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: #212121;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.card:hover .imgContent {
+  transform: scale(1.05);
+}
+
+.card:hover img {
+  opacity: 0.5;
+}
+
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .imgContent {
+  transform: translateY(0);
+}
+
+.catOrigin {
+  font: italic;
+}
+.inp{
+  border-radius: 10px;
+  padding-left: 15px;
 }
